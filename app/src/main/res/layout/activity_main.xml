@@ -8,16 +8,17 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/Numbers"
+        android:id="@+id/Scr1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="numbers(2+5+4+2)" />
 
     <TextView
-        android:id="@+id/Sum"
+        android:id="@+id/Scr2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sum of numbers(13)"
+        android:textColor="#2196F3"
         android:textSize="36sp" />
 
     <LinearLayout
@@ -36,24 +37,27 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button28"
+                    android:id="@+id/SevenB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="7" />
 
                 <Button
-                    android:id="@+id/button29"
+                    android:id="@+id/EightB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="8" />
 
                 <Button
-                    android:id="@+id/button30"
+                    android:id="@+id/NineB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="9" />
 
             </LinearLayout>
@@ -64,24 +68,27 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button25"
+                    android:id="@+id/FourB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="4" />
+                    android:text="4"
+                    android:onClick="qtvButtonPressed" />
 
                 <Button
-                    android:id="@+id/button27"
+                    android:id="@+id/FiveB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="5" />
 
                 <Button
-                    android:id="@+id/button31"
+                    android:id="@+id/SixB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="6" />
 
             </LinearLayout>
@@ -92,24 +99,27 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button16"
+                    android:id="@+id/OneB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="1" />
 
                 <Button
-                    android:id="@+id/button17"
+                    android:id="@+id/TwoB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="2" />
 
                 <Button
-                    android:id="@+id/button18"
+                    android:id="@+id/ThreeB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="3" />
 
             </LinearLayout>
@@ -120,14 +130,15 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button42"
+                    android:id="@+id/ZeroB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="qtvButtonPressed"
                     android:text="0" />
 
                 <Button
-                    android:id="@+id/button43"
+                    android:id="@+id/ClearB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -139,13 +150,33 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Number_Dice(4D6)"
-                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Scr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="4"
+                        android:textColor="#4CAF50"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/Scr4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="D6"
+                        android:textColor="#F44336"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -154,14 +185,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button44"
+                    android:id="@+id/RollB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Roll" />
 
                 <Button
-                    android:id="@+id/button45"
+                    android:id="@+id/PercentileB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -180,17 +211,19 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button36"
+                    android:id="@+id/D4B"
                     android:layout_width="wrap_content"
-                    android:layout_height="80"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="dicesideButtonPressed"
                     android:text="D4" />
 
                 <Button
-                    android:id="@+id/button37"
+                    android:id="@+id/D6B"
                     android:layout_width="wrap_content"
-                    android:layout_height="80"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="dicesideButtonPressed"
                     android:text="D6" />
             </LinearLayout>
 
@@ -200,17 +233,19 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button38"
+                    android:id="@+id/D8B"
                     android:layout_width="wrap_content"
-                    android:layout_height="80"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="dicesideButtonPressed"
                     android:text="D8" />
 
                 <Button
-                    android:id="@+id/button39"
+                    android:id="@+id/D10B"
                     android:layout_width="wrap_content"
-                    android:layout_height="80"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="dicesideButtonPressed"
                     android:text="D10" />
             </LinearLayout>
 
@@ -220,17 +255,19 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button40"
+                    android:id="@+id/D12B"
                     android:layout_width="wrap_content"
-                    android:layout_height="80"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="D12" />
+                    android:text="D12"
+                    android:onClick="dicesideButtonPressed" />
 
                 <Button
-                    android:id="@+id/button41"
+                    android:id="@+id/D20B"
                     android:layout_width="wrap_content"
-                    android:layout_height="80"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="dicesideButtonPressed"
                     android:text="D20" />
             </LinearLayout>
 
